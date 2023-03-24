@@ -1,0 +1,26 @@
+:root {
+    /* Primary */
+    --clr-primary-red: hsl(0, 100%, 74%); 
+    --clr-primary-green: hsl(154, 59%, 51%);
+
+    /* Accent */
+    --clr-accent-blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --clr-neutral-dark-blue: hsl(249, 10%, 26%);
+    --clr-neutral-grayish-blue: hsl(246, 25%, 77%);
+
+    /* Font */
+    --fs-body: 1rem;
+    --ff-base: 'Poppins', sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--ff-base);
+    font-size: var(--fs-body);
+}
