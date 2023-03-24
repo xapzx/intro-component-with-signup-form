@@ -23,4 +23,13 @@ body {
     min-height: 100vh;
     font-family: var(--ff-base);
     font-size: var(--fs-body);
+    background: url(images/bg-intro-mobile.png);
+    background-color: var(--clr-primary-red);
+}
+
+@media (min-width: 800px) {
+    body {
+        background: url(images/bg-intro-desktop.png);
+        background-color: var(--clr-primary-red);
+    }
 }
