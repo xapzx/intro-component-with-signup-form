@@ -50,6 +50,8 @@ main {
         background-color: var(--clr-primary-red);
         padding: 7.5rem 10rem;
         text-align: left;
+        display: grid;
+        place-content: center;
     }
 
     main {
@@ -98,6 +100,8 @@ main {
     border-radius: 4px;
     font-weight: var(--fw-semibold);
     font-size: 0.9rem;
+    color: var(--clr-neutral-dark-blue);
+    width: 100%;
 }
 
 .form-container button {
@@ -109,6 +113,7 @@ main {
     border: none;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgb(0 0 0 / 0.2);
+    cursor: pointer;
 }
 
 .form-container p {
@@ -122,6 +127,31 @@ main {
     text-decoration: none;
     color: var(--clr-primary-red);
     font-weight: var(--fw-semibold);
+}
+
+p.error-msg {
+    text-align: right;
+    padding: 0.2rem 0;
+    color: var(--clr-primary-red);
+}
+
+form > div {
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+input.error {
+    border: 2px solid var(--clr-primary-red);
+    color: var(--clr-primary-red);
+}
+
+.error-icon-active {
+    display: none;
 }
 
 @media (min-width: 1000px) {
@@ -140,10 +170,15 @@ main {
 
     .form-container input {
         padding: 1rem 2rem;
-        color: var(--clr-neutral-dark-blue);
     }
 
     .form-container input:active {
         border: none;
+    }
+
+    .error-icon {
+        position: absolute;
+        right: 1.5rem;
+        top: 1rem;
     }
 }

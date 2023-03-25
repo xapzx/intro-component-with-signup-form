@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main>
@@ -21,12 +22,28 @@
     </div>
     <div class="form-container">
       <div class="trial-prompt"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
-      <form action="">
-        <input type="text" name="first-name" id="first-name" placeholder="First Name">
-        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-        <input type="email" name="email" id="email" placeholder="Email Address">
-        <input type="password" name="password" id="password" placeholder="Password">
-        <button>Claim your free trial</button>
+      <form>
+        <div class="input">
+          <input type="text" name="first-name" id="first-name" placeholder="First Name">
+          <span class="error-icon error-icon-active"><img src="images/icon-error.svg" alt="Error icon"></span>
+          <p class="error-msg"></p>
+        </div>
+        <div class="input">
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+          <span class="error-icon error-icon-active"><img src="images/icon-error.svg" alt="Error icon"></span>
+          <p class="error-msg"></p>
+        </div>
+        <div class="input">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <span class="error-icon error-icon-active"><img src="images/icon-error.svg" alt="Error icon"></span>
+          <p class="error-msg"></p>
+        </div>
+        <div class="input">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <span class="error-icon error-icon-active"><img src="images/icon-error.svg" alt="Error icon"></span>
+          <p class="error-msg"></p>
+        </div>
+        <button class="submit">Claim your free trial</button>
         <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
     </div>
